@@ -1,0 +1,6 @@
+A Maven plugin that can be used to start a test Cassandra instace within a Maven project.
+
+NOTE: This plugin uses non public Cassandra APIs.  I imagine it could stop working if 
+only minor changes are made to the internals of Cassandra.  Use at your own risk!
+
+See http://github.com/danwashusen/pelops/blob/master/pom.xml for a usage example.
