@@ -7,4 +7,8 @@ only minor changes are made to the internals of Cassandra.  Use at your own risk
 The latest dev release of 0.7.0 (2010-07-31) breaks this plugin because of the following call in FBUtilities:
 ClassLoader.getSystemClassLoader().getResourceAsStream("org/apache/cassandra/config/version.properties");
 
+Maven separates the classloaders so the system classloader is unaware of the plugins classpath changes (and as a result
+ the version.properties file can't be found).
+!!!!!!!!! WARNING !!!!!!!!!
+
 See http://github.com/danwashusen/pelops/blob/master/pom.xml for a usage example.
